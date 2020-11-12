@@ -1,0 +1,175 @@
+@charset "UTF-8";
+ 
+@import url(http://fonts.googleapis.com/css?family=Jacques+Francois); 
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+/******** BODY **********/
+
+body {
+background-color: #979797; color: #ffffff;
+margin: 0;
+padding: 0;
+width: 940px;
+margin-left: auto;
+margin-right: auto;
+height: 1500px;
+}
+ 
+/********** LOGO **********/
+
+header {
+text-align: center;
+width: 700px;
+height: 190px;
+margin: 40px auto 40px auto;
+}
+
+header h1 {
+	color: #CFCFCF
+}
+
+/********** TYPOGRAPHY **********/
+
+@font-face {
+	font-family:DDCHardware-Regular;
+	font-weight: 100;
+	src: url("DDCHardware-Regular.otf");
+	
+}
+
+header h1 {
+	font-family: DDCHardware-Regular;
+	text-align: center;
+	font-size: 30px;
+	color: #363636
+}
+ 
+/********** SLIDER **********/
+
+.slider {
+	max-width: 940px;
+	margin: 0px auto 30px auto; 
+	overflow:hidden; 
+	height:430px; 
+	position:relative;
+}
+ 
+/********** SLIDER **********/
+
+.slide-group { 
+	width: 100%; 
+	height: 100%; 
+	position: relative;
+}
+
+.slide {
+	width: 100%; 
+	height: 100%; 
+	display: none; 
+	position: absolute;
+}
+
+.slide:first-child { 
+	display: block;
+}
+
+/********** BUTTONS **********/
+
+.slide-buttons { 
+	text-align: center;
+}
+
+.slide-btn {
+	border: none; 
+	background: none; 
+	color: #000; 
+	font-size: 200%; 
+	line-height: 0.5em;
+}
+
+.slide-btn.active, .slide-btn:hover { 
+	color: #ed8e6c;
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev, .next { 
+	cursor: pointer; 
+	position: absolute; 
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease; 
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover { 
+	background-color: rgba(0,0,0,0.8);
+}
+
+.column {
+  float: left;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.left {
+  width: 66.6%;
+}
+
+.right {
+  width: 33.3%;
+}
+
+.column2 {
+  float: left;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.left2 {
+  width: 50%;
+}
+
+.right2 {
+  width: 50%;
+}
+
+.column3 {
+  float: left;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.left3 {
+  width: 33.3%;
+}
+
+.right3 {
+  width: 33.3%;
+}
+
+.middle3 {
+  width: 33.3%
+}
+
+.footer {
+  float: left;
+  height: 50px;
+  margin-top: 10px;
+  width: 100%;
+}
