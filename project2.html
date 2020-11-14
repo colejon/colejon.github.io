@@ -1,7 +1,74 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
 <a routerLink="/" class="navbar-brand" href="#">Cole Christiansen</a>
 <ul class="navbar-nav ml-auto">
 <li class="nav-item">
@@ -26,15 +93,35 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        
+
         gtag('config', 'UA-178463729-1');
     </script>
     <title>Cole Christiansen Portfolio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
   <body>
+
+    <div class="content">
+      <img src="/PICS/spotter.jpg" alt="picture of app called spotter" style="width:100%">
+      <h3>Spotter</h3>
+      <p>Spotter is a project for a class titled Interaction Design. The goal of the class was to create a mobile app from the ground up, utilizing Goal-Directed Design, with no restriction as to the type or subject matter of the app.
+
+My team chose to approach solutions for the current state of movie and TV streaming. With Spotter, we aimed to assist users in searching for, discovering and tracking digital content on various streaming platforms.
+<br></br>
+
+
+Our user interviews and usability testing greatly impacted the final prototype we ended up with, and I learned a lot about the importance of iterative design through the many versions of the app we cycled through while trying to meet our users’ needs. The designs I came up with didn’t always click with my teammates and the designs we finally agreed on didn’t always meet our users’ expectations. It was a lesson in compromise and I was lucky to have a team that could pivot and approach each problem that came up in a way that always resulted in either a new perspective or an improved app feature.
+
+It was an interesting challenge to conduct the second half of our design process completely online, and thanks to my talented teammates, we were able to complete the project with time to spare. I learned a lot of new techniques and software solutions during this app build and I look forward to applying them in projects to come.
+
+
+</p>
+    </div>
+
+    <!-- END MAIN -->
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
