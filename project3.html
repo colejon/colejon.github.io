@@ -1,7 +1,74 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
 <a routerLink="/" class="navbar-brand" href="#">Cole Christiansen</a>
 <ul class="navbar-nav ml-auto">
 <li class="nav-item">
@@ -26,15 +93,36 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        
+
         gtag('config', 'UA-178463729-1');
     </script>
     <title>Cole Christiansen Portfolio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
   <body>
+
+    <div class="content">
+      <img src="/PICS/hay.jpg" alt="picture of hay stacks in a field" style="width:100%">
+      <h3>Ethnography – Representation of Black Farmers in the United States</h3>
+      <p>Black farmers’ representation is greatly lacking. We have seen through our research that those without representation are left only with social media communities to further their reach. There are small programs to foster farming in the Black community but they are often obscure and aren’t accessible to those that aren’t already involved in farming in some way. More transparency and increasing of these programs can help but there also needs to be a mental change in the country at-large. As a whole, we need to notice and uplift those that lack representation regardless of stigmas or the status quo. Once we do that, not only will Black farmers benefit, but so will everyone else that is part of their community.
+<br></br>
+
+
+
+
+This ethnographic report is a project for a class called Ethnography for Designers. The goal of the class was to learn the basics of ethnography and test what we learned by conducting one ourselves using a hands-on approach called applied ethnography. Because of the restrictions of the COVID-19 pandemic, this course was taught online and required my team and me to carry out our research online as well. This report is therefore considered a digital ethnography.
+
+My team chose to look at the current demographic of farmers in America. Specifically, we were interested in Black farmers and their experience with representation amongst their peers. Our research was inspired by a desire to understand and hopefully uplift this community, as it is currently, and has been historically, marginalized.
+
+
+
+</p>
+    </div>
+
+    <!-- END MAIN -->
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
